@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ====================================================================== */
+
+/* Código del menú login */
+.navega-top{
+    /* Este código hace que se pueda compartir en la misma línea
+    un logo con links */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #06113C
+    /* background-image: linear-gradient( 135deg, #FFF720 10%, #3CD500 100%); */
+}
+
+.logo{ /* Logo Mario */
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.login-opts{
+    display: flex;
+    justify-content:right;
+}
+
+.login-opts li{
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.login-opts li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family:'Roboto', sans-serif;
+}
+.brand-top{
+    margin-left: -190px; /* Buscar como corregir este error negativo*/
+}
+/* ====================================================================== */
+
+/* Código del menú principal */
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px; /* alto del objeto */
+    /* padding: 10px; */
+    /* background-color: #DDDDDD; */
+    background-color: #FD5D5D;
+}
+
+.logo-avenue{ /* Logo solo texto */
+    font-size: larger;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav_list{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_list li{
+    list-style: none;
+    padding: 0 15px;
+}
+.nav_list li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_search{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    flex-grow: 1;
+    font-weight: 1200;
+    border-radius: 30px;
+}
+
+.btn-search{
+    padding: 4px;
+    height: 16px;
+    color: #090909; /* código de uiverse.io*/
+    font-size: 18px; /* código de uiverse.io*/
+    border-radius: 0.5em; /* código de uiverse.io*/
+    background: #e8e8e8; /* código de uiverse.io*/
+    border: 1px solid #e8e8e8; /* código de uiverse.io*/
+    transition: all .3s; /* código de uiverse.io*/
+    box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff; /* código de uiverse.io*/
+}
+
+.btn-search:hover{
+    border: 1px solid white;
+}
+
+.btn-search:active{
+    box-shadow: 4px 4px 12px #c5c5c5,-4px -4px 12px #ffffff;
+}
+
+/* ====================================================================== */
+
+/* Código de la imagen central */
+.img-central{
+    height: 450px;
+    /* background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); */
+    background-image: url('/img/ropa-banner.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.product-view{
+    padding-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+h3{
+    font-family: 'roboto';
+    display: flex;
+    color: #fff;
+    padding: 20px;
+}
+.ave-classics{
+    color: #2d47f4;
+}
+
+/* ====================================================================== */
+
+/* Código del producto */
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.articulo{
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    width: 100%
+}
+
+.title-art{
+    display: flex;
+}
+
+.article_title {
+    margin-left: 50px;
+    padding: 0px 0 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10000;
+
+}
+
+.estrella{
+    padding: 0 5px 0 10px;
+    height: 16px;
+}
+
+.logo-twitter{
+padding: 0 15px 0 0;
+height: 16px;
+}
+
+.sobre{
+    padding: 0 15px 0 0;
+    height: 16px;
+}
+.logo-facebook{
+    padding: 0 15px 0 0;
+    height: 16px;
+    }
+
+.logo-instagram{
+    padding: 0 15px 0 0;
+    height: 16px;
+}
+
+.puntua_iconos{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.puntua_iconos li{
+    list-style: none;
+    padding: 0 8px;
+}
+
+.puntua_iconos li a{
+    text-decoration: none;
+}
+
+.left_main{
+    padding-left: 150px;
+}
+
+.modelo-ropa{
+    display: inline-block;
+    width: 300px;
+    height: 450px;
+}
+
+.detalle-prod{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 500px;
+    position: absolute;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.detalle-prod li{
+    list-style: none;
+    padding-top: 20px;
+    font-size: 1.05em;
+}
+
+h3.precio-prod{
+    font-weight: bold;
+}
+
+.form-prod{
+    display: flex;
+    margin-top: 30px;
+}
+
+.etiqueta-prod{
+    /* margin-top: 40px; */
+    padding-right: 160px;
+    font-style:inherit;
+    /* display: inline-block; */
+    /* position: absolute;    */
+}
+
+.selec-color{
+    display: inline-block;
+    position:absolute;
+    margin-top: 90px;
+    top: 280px; /*con este código lo ubico verticalmente*/
+    border-radius:30px;
+    width: 12em;
+}
+
+.selec-size{
+    display: inline-block;
+    position:absolute;
+    margin-top: 90px;
+    margin-left: 200px;
+    top: 280px;
+    border-radius: 30px;
+    width: 12em;
+}
+
+.prod-cant{
+    display: inline-block;
+    position:absolute;
+    margin-top: 90px;
+    margin-left: 410px;
+    top: 280px;
+}
+
+.btn-add-to-cart{
+    display: flex;
+    position: absolute;
+    top: 35em;
+    background-color: #06113C;
+
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   }
+
+.btn-add-to-cart:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+   
+.btn-add-to-cart:active {
+    transform: translateY(-1px);
+}
+
+.btn-add-favorites{
+    display: flex;
+    position: absolute;
+    top: 32em;
+    margin-left: 300px;
+
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #7e97b8;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+.btn-add-favorites:hover {
+    color: #516d91;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+.btn-add-favorites:active {
+    box-shadow: none;
+}
+
+.inf-empresa{
+    background-color: #f2f2f4;
+    margin-top: 100px;
+    max-width: 70%;
+    margin-left: 150px;
+}
+
+.list-empr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-empr li{
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.list-empr li:hover{
+    background-color: rgb(90, 87, 87);
+    color: #fff;
+}
+
+.list-empr li:active{
+    background-color: #2df4ab;
+}
+
+.list-empr li a{
+    color: #323332;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    /* ================ */
+    /* este código hace que todo el cuadro del li se active como un link y no solo la etiqueta <a> */
+    /* y no es necesario poner un padding left ni right en la clase list-empr li*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* ================ */
+}
+
+.list-empr li a:hover{
+    color: #fff;
+}
+
+.desc-empr{
+    background-color: #2df4ab;
+}
+
+.detalle-info{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    display: inline-block;
+    position: absolute;
+    max-width: 70%;
+    text-align: justify;
+    line-height: 1.5em;
+    margin-left: 150px;
+}
+
+/* ====================================================================== */
+/* Código del footer */
+
+.foot_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    /* margin-left: 10px; */
+    background-color: #bf4444;
+    /* width: 1600px; */
+}
+
+.list-footer{
+    display: flex;
+    padding-top: 50px;
+    max-width: 60%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list-detalle-footer{
+    /* display: inline-block; */
+    list-style: none;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.7em;
+}
+
+.list-detalle-footer li{
+    text-decoration: none;
+}
